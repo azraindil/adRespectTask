@@ -1,0 +1,31 @@
+.slider-prev, .slider-next, .slider-prev-icon, .slider-next-icon {
+  display: initial;
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  padding: 24px 32px;
+  background: var(--light-beige);
+}
+
+.slider-prev, .slider-next {
+  height: 48px;
+  width: 64px;
+  background: var(--light-beige);
+  border: none;
+}
+
+
+.slider-prev-icon {
+  content: url("/img/icons/arrow.svg");
+}
+
+.slider-next-icon {
+  content: url("/img/icons/arrow.svg");
+  rotate: 180deg;
+}
