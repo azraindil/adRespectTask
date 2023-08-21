@@ -37,6 +37,7 @@
   transition: background-image 0.2s ease-in-out;
   width: 24px;
   height: 24px;
+  visibility: initial;
 }
 
 .search-btn.show {
@@ -66,10 +67,6 @@
   font-weight: bolder;
 }
 
-.dropdown-links:hover > .dropdown-menu {
-  display: block;
-}
-
 .links-dd-menu {
   border: none;
   border-radius: 0;
@@ -96,4 +93,33 @@
 .dropdown-menu[data-bs-popper] {
   left: auto;
   margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: fit-content !important;
+    top: 100%;
+    width: 50%;
+    right: 0;
+    padding: 5%;
+  }
+
+  .search-btn {
+    visibility: hidden;
+  }
+
+  .search-dd-menu {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .dropdown-links:hover > .dropdown-menu {
+    display: block;
+  }
+
 }

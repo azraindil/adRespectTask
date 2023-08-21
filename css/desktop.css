@@ -1,10 +1,23 @@
+h1 {
+  font-size: 6rem;
+  line-height: 116.667%;
+}
+h2 {
+  font-size: 4.8rem;
+}
+.hero-content{
+  width: 42%;
+}
+.hero-text{
+  height: 44%;
+}
 .container {
   max-width: 86.6%;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0 24px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .search-btn {
