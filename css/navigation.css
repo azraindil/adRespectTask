@@ -1,0 +1,125 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  height: 72px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar .container, .navbar .container .collapse {
+  height: 100%;
+}
+
+.navbar-nav {
+  height: 100%;
+  padding-top: 24px;
+}
+
+.nav-link, .dropdown-item {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+}
+
+.nav-link:hover, .nav-link:focus, .dropdown-item:hover {
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.search-btn {
+  background-image: url("/img/icons/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  width: 24px;
+  height: 24px;
+  visibility: initial;
+}
+
+.search-btn.show {
+  background-image: url("/img/icons/xmark-solid.svg");
+}
+
+.dropdown-menu-btn {
+  display: flex;
+  gap: 5px;
+}
+
+.dropdown-menu-btn::after {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  line-height: 0;
+  content: url("/img/icons/caret.svg");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.dropdown-links:hover > .dropdown-menu-btn::after, .dropdown-menu-btn[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-links:hover > .dropdown-menu-btn {
+  font-weight: bolder;
+}
+
+.links-dd-menu {
+  border: none;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.6);
+  top: 100%;
+}
+
+.search-dd-menu {
+  padding: 0;
+  margin-right: 7%;
+  border-radius: 0;
+  width: 33%;
+  background: rgba(255, 255, 255, 0.6)
+}
+
+.search-dd-menu .form-control {
+  background: rgba(0, 0, 0, 0);
+}
+
+.dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .search-dd-menu .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: auto;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .navbar-collapse {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: fit-content !important;
+    top: 100%;
+    width: 50%;
+    right: 0;
+    padding: 5%;
+  }
+
+  .search-btn {
+    visibility: hidden;
+  }
+
+  .search-dd-menu {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .dropdown-links:hover > .dropdown-menu {
+    display: block;
+  }
+
+}

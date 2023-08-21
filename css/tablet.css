@@ -1,0 +1,91 @@
+
+.w-71 {
+  width: 71% !important;
+}
+
+.hero-section {
+  height: 68vh;
+}
+
+.hero-content {
+  width: 50%;
+  gap: 10%;
+}
+
+.hero-text {
+  height: 54%;
+  color: var(--black);
+}
+
+.slider-prev, .slider-next {
+  height: 96px;
+  width: 96px;
+  padding: 24px 32px;
+}
+
+.shadow {
+  display: none;
+}
+
+.btn-rounded {
+  padding: 12px 24px;
+}
+
+.hero-section .carousel img {
+  position: absolute;
+  right: 0;
+  width: 47.778%;
+  height: 100%;
+  padding: 0;
+  display: initial;
+}
+
+.outline-btn-green {
+  background-color: transparent;
+}
+
+.offer-section, .realizations-section {
+  padding-top: 120px;
+}
+
+.card-body {
+  padding: 48px 40px;
+}
+
+.about-section {
+  background: url("/img/bg/Photo (8).png") no-repeat, var(--green);
+  background-position: left, right;
+  background-size: contain;
+  padding: 135px 0;
+}
+
+.about-section .col {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.contact-section .row {
+  padding: 120px 110px;
+}
+
+.footer {
+  padding: 80px 0;
+}
+
+.footer .row {
+  flex-direction: row;
+  gap: 0;
+}
+.footer .col-6{
+  width: 50%;
+}
+.footer-links {
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.copyright {
+  margin-top: 120px;
+}
