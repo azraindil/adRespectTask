@@ -35,4 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
       macyBtnArrow.style.transform = "rotate(0deg)";
     }
   })
+  var myCarousel = document.querySelector('#galleryControls')
+  var myModalEl = document.getElementById('galleryModal')
+
+  myModalEl.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget
+    var bsCarousel = bootstrap.Carousel.getInstance(myCarousel)
+    bsCarousel.to(trigger.dataset.bsSlideTo)
+  })
+
+
 });
